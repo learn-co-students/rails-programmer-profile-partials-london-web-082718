@@ -12,16 +12,12 @@
 
   <div class="col-md-9 programmer-info">
 
-    <p>
-    <strong>Home Country:</strong> <%= @programmer.home_country %><br>
-    </p>
+    <%=render partial: 'attribute', locals: { label: "Home Country", value: @programmer.home_country } %>
 
-    <p>
-    <strong>Quote:</strong> <%= @programmer.quote %><br>
-    </p>
+      <%=render partial: 'attribute', locals: { label: "Quote", value: @programmer.quote } %>
 
-    <p>
-    <strong>Claim To Fame:</strong> <%= @programmer.claim_to_fame %>
+      <%=render partial: 'attribute', locals: { label: "Claim To Fame", value: @programmer.claim_to_fame } %>
+
     </p>
 
     <p>
@@ -30,4 +26,3 @@
 
   </div>
 </div>
-
